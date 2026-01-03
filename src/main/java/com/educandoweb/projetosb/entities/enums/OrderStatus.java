@@ -1,7 +1,5 @@
 package com.educandoweb.projetosb.entities.enums;
 
-import org.aspectj.weaver.ast.Or;
-
 public enum OrderStatus {
     WAITING_PAYMENT(1),
     PAID(2),

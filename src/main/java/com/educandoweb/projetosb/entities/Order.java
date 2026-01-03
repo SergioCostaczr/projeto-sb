@@ -3,7 +3,6 @@ package com.educandoweb.projetosb.entities;
 
 import com.educandoweb.projetosb.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -32,7 +31,7 @@ public class Order implements Serializable {
     @OneToMany(mappedBy ="id.order" )
     private Set<OrderItem> item = new HashSet<>();
 
-    @OneToOne(mappedBy = "order", cascade = CascadeType.ALL) //Mapeias ambas as entidades para ter o mesmo Id
+    @OneToOne(mappedBy = "order", cascade = CascadeType.ALL) //Mapeia ambas as entidades para ter o mesmo Id
     private Payment payment;
 
     public Order() {

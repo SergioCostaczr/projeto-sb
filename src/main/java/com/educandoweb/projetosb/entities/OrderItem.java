@@ -4,10 +4,8 @@ import com.educandoweb.projetosb.entities.pk.OrderItemPk;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Table;
 
-import java.io.PipedReader;
 import java.io.Serializable;
 import java.util.Objects;
 
